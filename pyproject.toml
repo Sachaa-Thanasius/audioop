@@ -1,5 +1,8 @@
 [build-system]
-requires = [
-    "setuptools >= 46.4.0",
-]
+requires = ["setuptools > 60.2", "hpy"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "audioop"  # as it would appear on PyPI
+version = "0.0.1"
+dependencies = ["hpy; implementation_name == 'cpython'"]
